@@ -1,0 +1,28 @@
+//
+//  ViewController.swift
+//  CounterApp
+//
+//  Created by Steven Williams on 1/8/19.
+//  Copyright © 2019 Steven Williams. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+
+    var Count = 0
+
+    @IBOutlet weak var TotalCounter: UILabel!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+
+
+    @IBAction func AddCounter(_ sender: Any) {
+
+        Count = Count + 1
+        TotalCounter.text = String(Count)
+
+    }
+}
